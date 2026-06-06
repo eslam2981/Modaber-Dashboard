@@ -148,4 +148,12 @@
 }
 
 @media (min-width: 80rem) {}
-@media (min-width: 660px) and (max-width: 48.75rem) { .card-bottom .card-number, .paypal-number { font-size: 0.95rem; letter-spacing: 0; } }
+
+@media (min-width: 660px) and (max-width: 48.75rem) {
+
+  .card-bottom .card-number,
+  .paypal-number {
+    font-size: 0.95rem;
+    letter-spacing: 0;
+  }
+}
