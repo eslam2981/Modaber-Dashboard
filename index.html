@@ -1,970 +1,2205 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<!doctype html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta name="viewport"
-    content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/all.min.css">
-  <link rel="stylesheet" href="./css/styles.min.css">
-  <link rel="stylesheet" href="./css/media-query.css">
-  <title>مدبّر | إدارة أموالك بذكاء</title>
-  <link rel="shortcut icon" href="./assets/favicon.png"
-    type="image/x-icon">
+    content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="./css/all.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/styles.css" />
+  <!-- Media Querry CSS -->
+  <link rel="stylesheet" href="./css/media-qurey.css">
+  <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+  <title>EliteHomes - Your Dream Home Awaits</title>
 </head>
 
-<body>
-  <!--Start app wrapper-->
-  <div class="app-container">
+<body data-bs-spy="scroll" data-bs-target=".navbar"
+  data-bs-offset="70">
 
-    <!--Start aside-->
-    <aside>
-      <div class="aside-wrapper">
-        <div class="aside-content">
-          <div class="aside-logo">
-            <i class="fa-solid fa-coins"></i>
-          </div>
-          <div class="aside-title">
-            <h2 class="text">مدبّر</h2>
-            <span class="text">إدارة أموالك بذكاء</span>
+<!-- Start Main content-->
+<main>
+
+    <!-- Start Navbar -->
+  <nav
+    class="navbar navbar-expand-lg bg-body-tertiary shadow p-3 fixed-top">
+    <div class="container">
+      <a class="navbar-brand font-exo fw-semibold fs-3"
+        href="#">EliteHomes</a>
+      <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse"
+        id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page"
+              href="#home">Home</a>
+          </li>
+          <li class="nav-item dropdown position-static">
+            <a class="nav-link dropdown-toggle d-flex align-items-center justify-content-between"
+              href="#" role="button"
+              data-bs-toggle="dropdown"
+              data-bs-auto-close="outside"
+              aria-expanded="false">
+              Properties <i class="fa-solid fa-chevron-down ms-1 fs-12"></i></a>
+            <div class="dropdown-menu mega-menu">
+              <div class="container">
+                <div class="row">
+
+                  <div class="col-lg-6">
+                    <div class="row">
+                      <div class="col-lg-6 mb-3">
+                        <h6 class="fw-bold mb-4">Featured
+                          Properties</h6>
+
+                        <div class="row gx-4">
+                          <div class="col-6 col-lg-12">
+                            <div
+                              class="d-flex align-items-center mb-3 featured-card cursor-pointer">
+                              <img
+                                src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9"
+                                class="rounded-3 me-3 avatar-60"
+                                alt="Property">
+                              <div>
+                                <h6 class="mb-1 fw-bold fs-6 text-dark">Luxury Villa</h6>
+                                <span class="fs-xs text-secondary text-nowrap">$2.5M • 5 beds • 4 baths</span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-6 col-lg-12">
+                            <div
+                              class="d-flex align-items-center mb-3 featured-card cursor-pointer">
+                              <img
+                                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+                                class="rounded-3 me-3 avatar-60"
+                                alt="Property">
+                              <div>
+                                <h6 class="mb-1 fw-bold fs-6 text-dark">Modern Apartment</h6>
+                                <span class="fs-xs text-secondary text-nowrap">$850K • 2 beds • 2 baths</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-6 mb-3">
+                        <h6 class="fw-bold mb-4">Property
+                          Types</h6>
+                        <ul
+                          class="list-unstyled mb-0 property-list">
+                          <li class="mb-3">
+                            <a href="#"
+                              class="text-decoration-none custom-menu-link d-flex align-items-center">
+                              <i
+                                class="fa-solid fa-home me-3 custom-menu-icon fs-5"></i>
+                              Single Family Homes
+                            </a>
+                          </li>
+                          <li class="mb-3">
+                            <a href="#"
+                              class="text-decoration-none custom-menu-link d-flex align-items-center">
+                              <i
+                                class="fa-solid fa-building me-3 custom-menu-icon fs-5"></i>
+                              Apartments
+                            </a>
+                          </li>
+                          <li class="mb-3">
+                            <a href="#"
+                              class="text-decoration-none custom-menu-link d-flex align-items-center">
+                              <i
+                                class="fa-solid fa-warehouse me-3 custom-menu-icon fs-5"></i>
+                              Condominiums
+                            </a>
+                          </li>
+                          <li class="mb-3">
+                            <a href="#"
+                              class="text-decoration-none custom-menu-link d-flex align-items-center">
+                              <i
+                                class="fa-solid fa-store me-3 custom-menu-icon fs-5"></i>
+                              Commercial
+                            </a>
+                          </li>
+                          <li class="mb-3">
+                            <a href="#"
+                              class="text-decoration-none custom-menu-link d-flex align-items-center">
+                              <i
+                                class="fa-solid fa-tree me-3 custom-menu-icon fs-5"></i>
+                              Land & Lots
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 mb-3">
+                    <h6 class="fw-bold mb-4">Popular
+                      Locations</h6>
+                    <div class="row gx-2">
+                      <div class="col-4 col-lg-12">
+                        <div
+                          class="card text-bg-dark border-0 mb-3 overflow-hidden position-relative location-card list-item-card">
+                          <img
+                            src="https://images.unsplash.com/photo-1522083165195-3424ed129620"
+                            class="card-img h-100-cover"
+                            alt="New York">
+                          <div
+                            class="position-absolute top-0 start-0 w-100 h-100 overlay-gradient">
+                          </div>
+                          <div
+                            class="card-img-overlay d-flex flex-column justify-content-center p-2 z-1">
+                            <h6
+                              class="card-title fw-bold mb-0 text-white fs-085">
+                              New York</h6>
+                            <small
+                              class="text-white-50 text-light-gray fs-07">2,145
+                              Properties</small>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-4 col-lg-12">
+                        <div
+                          class="card text-bg-dark border-0 mb-3 overflow-hidden position-relative location-card list-item-card">
+                          <img
+                            src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29"
+                            class="card-img h-100-cover"
+                            alt="Los Angeles">
+                          <div
+                            class="position-absolute top-0 start-0 w-100 h-100 overlay-gradient">
+                          </div>
+                          <div
+                            class="card-img-overlay d-flex flex-column justify-content-center p-2 z-1">
+                            <h6
+                              class="card-title fw-bold mb-0 text-white fs-085">
+                              Los Angeles</h6>
+                            <small
+                              class="text-white-50 text-light-gray fs-07">1,873
+                              Properties</small>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-4 col-lg-12">
+                        <div
+                          class="card text-bg-dark border-0 mb-3 overflow-hidden position-relative location-card list-item-card">
+                          <img
+                            src="https://images.unsplash.com/photo-1537996194471-e657df975ab4"
+                            class="card-img h-100-cover"
+                            alt="Miami">
+                          <div
+                            class="position-absolute top-0 start-0 w-100 h-100 overlay-gradient">
+                          </div>
+                          <div
+                            class="card-img-overlay d-flex flex-column justify-content-center p-2 z-1">
+                            <h6
+                              class="card-title fw-bold mb-0 text-white fs-085">
+                              Miami</h6>
+                            <small
+                              class="text-white-50 text-light-gray fs-07">1,526
+                              Properties</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 mb-3">
+                    <h6 class="fw-bold mb-4">Resources</h6>
+                    <div class="row gx-2">
+                      <div class="col-6 col-lg-12 mb-3">
+                        <a href="#"
+                          class="text-decoration-none">
+                          <div
+                            class="card border bg-white p-3 h-100 position-relative overflow-hidden hover-card border-purple-light rounded-12">
+                            <div
+                              class="position-absolute top-0 end-0 shape-bg d-none d-lg-block position-absolute top-0 end-0 decor-circle-lg">
+                            </div>
+                            <div
+                              class="d-flex align-items-center mb-2 position-relative z-1">
+                              <div
+                                class="rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0 decor-circle-sm">
+                                <i
+                                  class="fa-solid fa-book-open fs-6 text-purple-accent"></i>
+                              </div>
+                              <h6
+                                class="fw-bold mb-0 hover-text-primary text-dark fs-sm">
+                                Buying Guide</h6>
+                            </div>
+                            <p
+                              class=" small mb-lg-3 mb-0 position-relative z-1 fs-xs">
+                              Essential tips and strategies
+                              for first-time homebuyers</p>
+                            <div
+                              class="position-relative z-1 mt-auto d-none d-lg-block">
+                              <small
+                                class="text-purple-accent fw-500">Learn
+                                More <i
+                                  class="fa-solid fa-arrow-right ms-1"></i></small>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="col-6 col-lg-12 mb-3">
+                        <a href="#"
+                          class="text-decoration-none">
+                          <div
+                            class="card border bg-white p-3 h-100 position-relative overflow-hidden hover-card border-green-light rounded-12">
+                            <div
+                              class="position-absolute top-0 end-0 shape-bg d-none d-lg-block position-absolute top-0 end-0 decor-circle-green-lg">
+                            </div>
+                            <div
+                              class="d-flex align-items-center mb-2 position-relative z-1">
+                              <div
+                                class="rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0 decor-circle-green-sm">
+                                <i
+                                  class="fa-solid fa-chart-line fs-6 text-green-custom"></i>
+                              </div>
+                              <h6
+                                class="fw-bold mb-0 hover-text-success text-dark fs-sm">
+                                Investment Tips</h6>
+                            </div>
+                            <p
+                              class=" small mb-lg-3 mb-0 position-relative z-1 fs-xs">
+                              Smart strategies for property
+                              investment success</p>
+                            <div
+                              class="position-relative z-1 mt-auto d-none d-lg-block">
+                              <small
+                                class="text-green-custom fw-500">Learn
+                                More <i
+                                  class="fa-solid fa-arrow-right ms-1"></i></small>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="col-12 col-lg-12 mb-3">
+                        <a href="#"
+                          class="text-decoration-none">
+                          <div
+                            class="card border bg-white p-3 h-100 position-relative overflow-hidden hover-card border-purple-light rounded-12">
+                            <div
+                              class="position-absolute top-0 end-0 shape-bg d-none d-lg-block position-absolute top-0 end-0 decor-circle-lg">
+                            </div>
+                            <div
+                              class="d-flex align-items-center mb-2 position-relative z-1">
+                              <div
+                                class="rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0 decor-circle-sm">
+                                <i
+                                  class="fa-solid fa-file-alt fs-6 text-purple"></i>
+                              </div>
+                              <h6
+                                class="fw-bold mb-0 hover-text-primary text-dark fs-sm">
+                                Market Reports</h6>
+                            </div>
+                            <p
+                              class=" small mb-lg-3 mb-0 position-relative z-1 fs-xs">
+                              In-depth analysis of real
+                              estate market trends</p>
+                            <div
+                              class="position-relative z-1 mt-auto d-none d-lg-block">
+                              <small
+                                class="text-purple fw-500">Learn
+                                More <i
+                                  class="fa-solid fa-arrow-right ms-1"></i></small>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link"
+              href="#Services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"
+              href="#client-stories">Testimonials</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#faq">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+
+  
+  <!-- Start Header -->
+  <header id="home">
+    <div
+      class="container text-center text-white font-exo mb-3">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8">
+          <h1 class="fw-bold display-4 pb-2 pb-md-3 hero-title">Find Your <br class="d-block d-md-none">Dream Home</h1>
+          <p class="lh-base fs-5 fs-md-5">Discover exceptional properties in prime locations. From modern condos to luxury estates, we help you find the perfect place to call home.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9 col-xl-8">
+          <form action=""
+            class="bg-white p-3 p-md-4 rounded-4 shadow-lg mt-2 mt-md-3">
+
+            <!-- First Row -->
+            <div class="row g-3 mb-4">
+
+              <!-- Location -->
+              <div class="col-md-6">
+                <label for="locationInput"
+                  class="form-label small fw-medium text-center w-100 d-block">Location</label>
+                <div class="position-relative">
+                  <i
+                    class="fa-solid fa-location-dot position-absolute top-50 translate-middle-y text-secondary opacity-50 left-15"></i>
+                  <input type="text" id="locationInput"
+                    class="form-control px-5 py-2"
+                    placeholder="Enter city, neighborhood, or ZIP code">
+                </div>
+              </div>
+
+              <!-- Property Type -->
+              <div class="col-md-3">
+                <label for="propertyType"
+                  class="form-label small fw-medium text-center w-100 d-block">Property
+                  Type</label>
+                <select id="propertyType"
+                  class="form-select py-2 text-dark hide-icon">
+                  <option selected>All Types</option>
+                  <option value="1">House</option>
+                  <option value="2">Apartment</option>
+                  <option value="3">Condo</option>
+                  <option value="4">Townhouse</option>
+                </select>
+              </div>
+
+              <!-- Price Range -->
+              <div class="col-md-3">
+                <label for="priceRange"
+                  class="form-label small fw-medium text-center w-100 d-block">Price
+                  Range</label>
+                <select id="priceRange"
+                  class="form-select py-2 text-dark hide-icon">
+                  <option selected>Any Price</option>
+                  <option value="1">$0 - $500K</option>
+                  <option value="2">$500K - $1M</option>
+                  <option value="3">$1M - $2M</option>
+                  <option value="4">$2M+</option>
+                </select>
+              </div>
+
+            </div>
+
+            <!-- Second Row -->
+            <div class="row g-3 mb-4">
+
+              <!-- Bedrooms -->
+              <div class="col-6 col-md-3">
+                <label for="bedrooms"
+                  class="form-label small fw-medium text-center w-100 d-block">Bedrooms</label>
+                <select id="bedrooms"
+                  class="form-select py-2 text-dark hide-icon">
+                  <option selected>Any</option>
+                  <option value="1">1+</option>
+                  <option value="2">2+</option>
+                  <option value="3">3+</option>
+                  <option value="4">4+</option>
+                  <option value="5">5+</option>
+                </select>
+              </div>
+
+              <!-- Bathrooms -->
+              <div class="col-6 col-md-3">
+                <label for="bathrooms"
+                  class="form-label small fw-medium text-center w-100 d-block">Bathrooms</label>
+                <select id="bathrooms"
+                  class="form-select py-2 text-dark hide-icon">
+                  <option selected>Any</option>
+                  <option value="1">1+</option>
+                  <option value="2">2+</option>
+                  <option value="3">3+</option>
+                  <option value="4">4+</option>
+                </select>
+              </div>
+
+              <!-- Min Sq Ft -->
+              <div class="col-6 col-md-3">
+                <label for="minSqFt"
+                  class="form-label small fw-medium text-center w-100 d-block">Min
+                  Sq Ft</label>
+                <input type="number" id="minSqFt"
+                  class="form-control py-2"
+                  placeholder="1,000">
+              </div>
+
+              <!-- Max Sq Ft -->
+              <div class="col-6 col-md-3">
+                <label for="maxSqFt"
+                  class="form-label small fw-medium text-center w-100 d-block">Max
+                  Sq Ft</label>
+                <input type="number" id="maxSqFt"
+                  class="form-control py-2"
+                  placeholder="5,000">
+              </div>
+
+            </div>
+
+            <!-- Search Button -->
+            <button type="submit"
+              class="btn btn-search w-100 text-white rounded-3 py-3 fw-bold fs-6">
+              <i
+                class="fa-solid fa-magnifying-glass me-2"></i>
+              Search Properties
+            </button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Stats Section -->
+    <div
+      class="container text-white text-center mt-5 pb-5 mb-5">
+      <div class="row justify-content-center g-3 g-md-4">
+        <!-- Stat 1 -->
+        <div class="col-6 col-md-2">
+          <h2 class="fw-bold mb-1 fs-2">15,000+</h2>
+          <p class="small text-light mb-0">Active Listings
+          </p>
+        </div>
+        <!-- Stat 2 -->
+        <div class="col-6 col-md-2">
+          <h2 class="fw-bold mb-1 fs-2">98%</h2>
+          <p class="small text-light mb-0">Client
+            Satisfaction</p>
+        </div>
+        <!-- Stat 3 -->
+        <div class="col-6 col-md-2">
+          <h2 class="fw-bold mb-1 fs-2">500+</h2>
+          <p class="small text-light mb-0">Expert Agents</p>
+        </div>
+        <!-- Stat 4 -->
+        <div class="col-6 col-md-2">
+          <h2 class="fw-bold mb-1 fs-2">25</h2>
+          <p class="small text-light mb-0">Years Experience
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End Header -->
+
+
+  <!-- Start Featured Properties -->
+  <section class="py-5 bg-main" id="featured">
+    <div class="container py-4">
+
+      <!-- Section Title -->
+      <div class="text-center mb-5">
+        <div
+          class="d-flex align-items-center justify-content-center mb-3">
+          <div class="title-line left"></div>
+          <span
+            class="text-primary fw-bold mx-3 px-3 py-1 text-uppercase rounded-pill subtitle-badge fs-10">Premium
+            Collection</span>
+          <div class="title-line right"></div>
+        </div>
+        <h2
+          class="display-4 fw-bolder mb-3 text-gradient-orange">
+          Featured Properties</h2>
+        <p class="text-secondary mx-auto fs-5 max-w-750">
+          Discover our handpicked
+          selection of premium properties in the
+          most<br>desirable locations</p>
+      </div>
+
+      <!-- Cards Row -->
+      <div class="row g-4">
+
+        <!-- Card 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div
+            class="card h-100 border-0 shadow rounded-4 overflow-hidden position-relative property-card-hover">
+        
+            <div
+              class="position-relative property-img-wrapper">
+              <img
+                src="./assets/featured-properties-img-1.png"
+                class="w-100 h-100 object-fit-cover"
+                alt="Modern Luxury Estate">
+              <span
+                class="badge bg-primary position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill fw-medium">Featured</span>
+              <button
+                class="btn btn-light bg-white rounded-circle position-absolute top-0 end-0 m-3 p-0 shadow-sm btn-icon-circle">
+                <i
+                  class="fa-solid fa-heart text-secondary"></i>
+              </button>
+              <div
+                class="position-absolute bottom-0 start-0 m-3 px-2 py-1 bg-dark bg-opacity-75 text-white rounded fw-medium fs-10">
+                <i class="fa-solid fa-camera me-1"></i> 24
+                Photos
+              </div>
+            </div>
+            <!-- Card Body -->
+            <div class="card-body p-4 d-flex flex-column">
+              <div
+                class="d-flex justify-content-between align-items-center mb-3">
+                <h3 class="fw-bold text-primary mb-0">
+                  $2,850,000</h3>
+                <small class="text-muted fs-9">Price per sq
+                  ft: $425</small>
+              </div>
+              <p class="text-muted mb-3 fs-7">4 beds &bull;
+                3.5 baths &bull; 6,720 sqft</p>
+              <h5 class="fw-bold mb-2 text-dark fs-xl-5">
+                Modern Luxury Estate</h5>
+              <p class="text-muted small mb-4 lh-base">1234
+                Beverly Hills Drive, Beverly Hills,
+                CA<br>90210</p>
+
+              <!-- Footer card-->
+              <div
+                class="mt-auto d-flex justify-content-between align-items-center border-top pt-3">
+                <div class="d-flex align-items-center">
+                  <img src="./assets/avatar-1.jpg"
+                    alt="Agent"
+                    class="rounded-circle me-2 object-fit-cover"
+                    width="32" height="32">
+                  <small class="text-secondary fs-8">John
+                    Mitchell</small>
+                </div>
+                <button
+                  class="btn btn-sm text-primary fw-medium px-3 py-2 rounded-3 btn-schedule fs-8">Schedule
+                  Tour</button>
+              </div>
+            </div>
           </div>
         </div>
 
-        <nav class="nav-menu">
-          <ul>
-            <li class="main">
+        <!-- Card 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div
+            class="card h-100 border-0 shadow rounded-4 overflow-hidden position-relative property-card-hover">
+            
+            <div
+              class="position-relative property-img-wrapper">
               <img
-                src="./assets/icons/house-solid-full.png"
-                alt="home page">
-              <span class="main-title text">الصفحة
-                الرئيسية</span>
-            </li>
-            <li>
-              <img
-                src="./assets/icons/arrow-right-arrow-left-solid-full.png"
-                alt="transactions">
-              <span class="text">المعاملات</span>
-            </li>
-            <li>
-              <img
-                src="./assets/icons/chart-pie-solid-full.png"
-                alt="dashboard">
-              <span class="text">الميزانيات</span>
-            </li>
-            <li>
-              <img
-                src="./assets/icons/piggy-bank-solid.png"
-                alt="piggy bank">
-              <span class="text">المدخرات</span>
-            </li>
-            <li>
-              <img
-                src="./assets/icons/file-invoice-dollar-solid-full.png"
-                alt="invoice">
-              <span class="text">الفواتير الشهرية</span>
-            </li>
-          </ul>
-        </nav>
+                src="./assets/featured-properties-img-2.png"
+                class="w-100 h-100 object-fit-cover"
+                alt="Downtown Penthouse">
+              <span
+                class="badge bg-success position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill fw-medium">New
+                Listing</span>
+              <button
+                class="btn btn-light bg-white rounded-circle position-absolute top-0 end-0 m-3 p-0 shadow-sm btn-icon-circle">
+                <i
+                  class="fa-solid fa-heart text-secondary"></i>
+              </button>
+              <div
+                class="position-absolute bottom-0 start-0 m-3 px-2 py-1 bg-dark bg-opacity-75 text-white rounded fw-medium fs-10">
+                <i class="fa-solid fa-camera me-1"></i> 18
+                Photos
+              </div>
+            </div>
+            <!-- Card Body -->
+            <div class="card-body p-4 d-flex flex-column">
+              <div
+                class="d-flex justify-content-between align-items-center mb-3">
+                <h3 class="fw-bold text-primary mb-0">
+                  $1,425,000</h3>
+                <small class="text-muted fs-9">Price per sq
+                  ft: $650</small>
+              </div>
+              <p class="text-muted mb-3 fs-7">3 beds &bull;
+                2.5 baths &bull; 2,192 sqft</p>
+              <h5 class="fw-bold mb-2 text-dark fs-xl-5">
+                Downtown Penthouse</h5>
+              <p class="text-muted small mb-4 lh-base">789
+                Metropolitan Ave, New York, NY 10001</p>
 
-        <section class="procedures-menu">
-          <h3 class="text">إجراءات سريعة</h3>
-          <ul>
-            <li>
-              <img class="blue-bg"
-                src="./assets/icons/paper-plane-solid-full.png"
-                alt="send">
-              <span class="text">إرسال أموال</span>
-            </li>
-            <li>
-              <img class="green-bg"
-                src="./assets/icons/plus-solid-full.png"
-                alt="receive">
-              <span class="text">إضافة أموال</span>
-            </li>
-            <li>
-              <img class="purple-bg"
-                src="./assets/icons/receipt-solid-full.png"
-                alt="bill">
-              <span class="text">دفع فاتورة </span>
-            </li>
-            <li>
-              <img class="orange-bg"
-                src="./assets/icons/chart-line-solid-full.png"
-                alt="stats">
-              <span class="text">استثمار</span>
-            </li>
-          </ul>
-        </section>
+              <!-- Footer card -->
+              <div
+                class="mt-auto d-flex justify-content-between align-items-center border-top pt-3">
+                <div class="d-flex align-items-center">
+                  <img src="./assets/avatar-2.jpg"
+                    alt="Agent"
+                    class="rounded-circle me-2 object-fit-cover"
+                    width="32" height="32">
+                  <small class="text-secondary fs-8">Emily
+                    Rodriguez</small>
+                </div>
+                <button
+                  class="btn btn-sm text-primary fw-medium px-3 py-2 rounded-3 btn-schedule fs-8">Schedule
+                  Tour</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div
+            class="card h-100 border-0 shadow rounded-4 overflow-hidden position-relative property-card-hover">
+            
+            <div
+              class="position-relative property-img-wrapper">
+              <img
+                src="./assets/featured-properties-img-3.png"
+                class="w-100 h-100 object-fit-cover"
+                alt="Family Suburban Home">
+              <span
+                class="badge position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill text-white fw-medium bg-orange">Price
+                Drop</span>
+              <button
+                class="btn btn-light bg-white rounded-circle position-absolute top-0 end-0 m-3 p-0 shadow-sm btn-icon-circle">
+                <i
+                  class="fa-solid fa-heart text-secondary"></i>
+              </button>
+              <div
+                class="position-absolute bottom-0 start-0 m-3 px-2 py-1 bg-dark bg-opacity-75 text-white rounded fw-medium fs-10">
+                <i class="fa-solid fa-camera me-1"></i> 32
+                Photos
+              </div>
+            </div>
+            <!-- Card Body -->
+            <div class="card-body p-4 d-flex flex-column">
+              <div
+                class="d-flex justify-content-between align-items-center mb-3">
+                <h3 class="fw-bold text-primary mb-0">
+                  $875,000</h3>
+                <small
+                  class="text-muted text-decoration-line-through fs-9">$925,000</small>
+              </div>
+              <p class="text-muted mb-3 fs-7">5 beds &bull;
+                4 baths &bull; 3,845 sqft</p>
+              <h5 class="fw-bold mb-2 text-dark fs-xl-5">
+                Family Suburban Home</h5>
+              <p class="text-muted small mb-4 lh-base">456
+                Oak Tree Lane, Austin, TX 78701</p>
+
+              <!-- Footer card -->
+              <div
+                class="mt-auto d-flex justify-content-between align-items-center border-top pt-3">
+                <div class="d-flex align-items-center">
+                  <img src="./assets/avatar-3.jpg"
+                    alt="Agent"
+                    class="rounded-circle me-2 object-fit-cover"
+                    width="32" height="32">
+                  <small class="text-secondary fs-8">Michael
+                    Chen</small>
+                </div>
+                <button
+                  class="btn btn-sm text-primary fw-medium px-3 py-2 rounded-3 btn-schedule fs-8">Schedule
+                  Tour</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </aside>
-    <!--End aside-->
+
+      <!-- View All Button -->
+      <div class="text-center mt-5">
+        <button
+          class="btn btn-primary px-4 py-2 rounded-3 fw-medium">
+          View All Properties <i
+            class="fa-solid fa-arrow-right ms-2"></i>
+        </button>
+      </div>
+
+    </div>
+  </section>
+  <!-- End Featured Properties Section -->
 
 
-    <!--Start main-->
-    <main>
-      <div class="cards-container">
 
-        <!--Start header-->
-        <header class="card">
-          <div class="right">
-            <div class="logo">
-              <i class="fa-solid fa-coins"></i>
-            </div>
-            <div class="title">
-              <h2 class="text">مدبّر</h2>
-              <span class="text">إدارة أموالك بذكاء</span>
-            </div>
-            <div class="online-tag ">
-              <div class="shape"></div>
-              <span>متصل</span>
-            </div>
-          </div>
-          <div class="left">
-            <div class="icons">
-              <div class="search-logo">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </div>
-              <div class="notification-logo">
-                <i class="fa-regular fa-bell"></i>
-                <span>2</span>
-              </div>
-            </div>
-            <div class="user-card">
-              <div class="user-content ">
-                <h3>سيف أسامة</h3>
-                <span>حساب مميز</span>
-              </div>
-              <div class="img">
-                <img src="./assets/avatar-1.jpg" alt="user">
-              </div>
-            </div>
-          </div>
-        </header>
-        <!--End header-->
+  <!-- Start Services Section -->
+  <section id="Services" class="our-service my-5 py-5">
+    <div class="container">
 
+      <div class="text-center mb-5">
+        <div
+          class="d-flex align-items-center justify-content-center mb-3">
+          <div class="title-line left"></div>
+          <span
+            class="text-primary fw-bold mx-3 px-3 py-1 text-uppercase rounded-pill subtitle-badge fs-10 bg-primary-light">WHAT
+            WE OFFER</span>
+          <div class="title-line right"></div>
+        </div>
+        <h2
+          class="display-4 fw-bolder mb-3 text-gradient-orange">
+          Our Services</h2>
+        <p
+          class="text-secondary mx-auto fs-5 services-section-subtitle">
+          Comprehensive real estate solutions tailored to
+          your needs</p>
+      </div>
 
-        <!--Start current balance section-->
-        <section class="card current-balance styling">
-          <span>الرصيد الحالي</span>
-          <h2>8,450 جنية</h2>
-          <div class="percentage">
-            <i class="fa-solid fa-arrow-up"></i>
-            <span>+2.5%</span>
-          </div>
-        </section>
-        <!--End current balance section-->
+      <div class="row">
+        <ul class="nav nav-tabs justify-content-center mb-4"
+          id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#home-tab-pane" type="button"
+              role="tab" aria-controls="home-tab-pane"
+              aria-selected="true">
+              <i class="fa-solid fa-home me-2"></i>
+              Buying</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#profile-tab-pane"
+              type="button" role="tab"
+              aria-controls="profile-tab-pane"
+              aria-selected="false">
+              <i class="fa-solid fa-dollar me-1"></i>
+              Selling</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#contact-tab-pane"
+              type="button" role="tab"
+              aria-controls="contact-tab-pane"
+              aria-selected="false">
+              <i
+                class="fa-solid fa-key me-2"></i>Renting</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="investing-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#investing-tab-pane"
+              type="button" role="tab"
+              aria-controls="investing-tab-pane"
+              aria-selected="false">
+              <i
+                class="fa-solid fa-chart-bar me-2"></i>Investing</button>
+          </li>
 
-        <!--start income section-->
-        <section class="card income styling">
-          <span>الدخل</span>
-          <h2>15,000 جنية</h2>
-          <div class="percentage">
-            <i class="fa-solid fa-arrow-up"></i>
-            <span>+8.2%</span>
-          </div>
-        </section>
-        <!--end income section-->
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="commercial-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#commercial-tab-pane"
+              type="button" role="tab"
+              aria-controls="commercial-tab-pane"
+              aria-selected="false">
+              <i
+                class="fa-solid fa-building me-2"></i>Commercial</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active"
+            id="home-tab-pane" role="tabpanel"
+            aria-labelledby="home-tab" tabindex="0">
 
-        <!--start expenses section-->
-        <section class="card expenses styling">
-          <span>المصروفات</span>
-          <h2>10,000 جنية</h2>
-          <div class="percentage red-color">
-            <i class="fa-solid fa-arrow-down"></i>
-            <span>-1.2%</span>
-          </div>
-        </section>
-        <!--end expenses section-->
-
-        <!--Start recent section-->
-        <section class="card recent">
-          <h2>الأنشطة الحديثة</h2>
-          <div class="new-acc-card">
-            <div class="right">
-              <div class="shape">
-                <img
-                  src="./assets/icons/user-plus-solid-full.png"
-                  alt="add user">
-              </div>
-              <div class="content">
-                <h3>إنشاء حساب توفير جديد</h3>
-                <p>تم إنشاء حساب توفير بنك الأهلي بنجاح</p>
-                <span>منذ ساعة واحدة</span>
-              </div>
-            </div>
-            <div class="left">
-              <span>حساب</span>
-            </div>
-          </div>
-
-
-          <div class="new-acc-card bg-green">
-            <div class="right">
-              <div class="shape green">
-                <img
-                  src="./assets/icons/credit-card-solid-full-green.png"
-                  alt="card">
-              </div>
-              <div class="content">
-                <h3> إضافة بطاقة جديدة</h3>
-                <p>تمت إضافة بطاقة Visa الجديدة ****2847</p>
-                <span>منذ 3 ساعات</span>
-              </div>
-            </div>
-            <div class="left">
-              <span class="light-green">بطاقة</span>
-            </div>
-          </div>
-          <div class="see-all">
-            <a href="#">عرض جميع الأنشطة (23)</a>
-          </div>
-        </section>
-        <!--End recent section-->
-
-        <!--Start latest section-->
-        <section class="card latest">
-          <div class="latest-header">
-            <div class="right">
-              <h2>المعاملات الأخيرة</h2>
-            </div>
-            <div class="left">
-              <span>عرض الكل</span>
-              <i class="fa-solid fa-chevron-left"></i>
-            </div>
-          </div>
-          <div class="table-wrapper">
-            <table>
-              <thead>
-                <tr class="table-header">
-                  <th>المعاملة</th>
-                  <th> الفئة</th>
-                  <th> التاريخ</th>
-                  <th> الحالة</th>
-                  <th> المبلغ</th>
-                </tr>
-              </thead>
-
-              <tbody>
-                <tr>
-                  <td>
-                    <div class="td-wrapper">
-                      <div class="img"><img
-                          src="./assets/avatar-2.jpg"
-                          alt="user 2"></div>
-                      <div class="content">
-                        <h3>محمود النجار</h3><span>تحويل
-                          أموال</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div
-                      class="category-badge bg-green-100 text-green-800">
-                      <i
-                        class="fa-solid fa-arrow-down"></i><span>دخل</span>
-                    </div>
-                  </td>
-                  <td><span class="text-color date-text">١٤
-                      أكتوبر ٢٠٢٥</span></td>
-                  <td><span
-                      class="status-badge bg-green-100 text-green-800">مكتمل</span>
-                  </td>
-                  <td><span class="money positive">+350
-                      جنية</span></td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="td-wrapper">
-                      <div
-                        class="icon-circle bg-orange-100"><i
-                          class="fa-solid fa-utensils"></i>
-                      </div>
-                      <div class="content">
-                        <h3>مطعم Meat moot</h3><span>دفع
-                          مطعم</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div
-                      class="category-badge bg-orange-100 text-orange-800">
-                      <i
-                        class="fa-solid fa-utensils"></i><span>طعام</span>
-                    </div>
-                  </td>
-                  <td><span class="text-color date-text">14
-                      أكتوبر، 2025</span></td>
-                  <td><span
-                      class="status-badge bg-green-100 text-green-800">مكتمل</span>
-                  </td>
-                  <td><span class="money negative">-2200
-                      جنية</span></td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="td-wrapper">
-                      <div class="icon-circle bg-blue-100">
-                        <i
-                          class="fa-solid fa-shopping-cart"></i>
-                      </div>
-                      <div class="content">
-                        <h3>مشتريات Amazon</h3><span>تسوق
-                          إلكتروني</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div
-                      class="category-badge bg-blue-100 text-blue-800">
-                      <i
-                        class="fa-solid fa-shopping-cart"></i><span>تسوق</span>
-                    </div>
-                  </td>
-                  <td><span class="text-color date-text">13
-                      أكتوبر، 2025</span></td>
-                  <td><span
-                      class="status-badge bg-green-100 text-green-800">مكتمل</span>
-                  </td>
-                  <td><span class="money negative">-1250
-                      جنية</span></td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="td-wrapper">
-                      <div class="img"><img
-                          src="./assets/avatar-1.jpg"
-                          alt="user"></div>
-                      <div class="content">
-                        <h3>عمر المهدي</h3><span>دفع فاتورة
-                          مقسمة</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div
-                      class="category-badge bg-purple-100 text-purple-800">
-                      <i
-                        class="fa-solid fa-users"></i><span>فاتورة
-                        مقسمة</span>
-                    </div>
-                  </td>
-                  <td><span class="text-color date-text">13
-                      أكتوبر، 2025</span></td>
-                  <td><span
-                      class="status-badge bg-green-100 text-green-800">مكتمل</span>
-                  </td>
-                  <td><span class="money negative">-1400
-                      جنية</span></td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="td-wrapper">
-                      <div class="img"><img
-                          src="./assets/avatar-3.jpg"
-                          alt="user 3"></div>
-                      <div class="content">
-                        <h3>محمد عوض</h3><span>دفع عمل
-                          حر</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div
-                      class="category-badge bg-green-100 text-green-800">
-                      <i
-                        class="fa-solid fa-briefcase"></i><span>عمل</span>
-                    </div>
-                  </td>
-                  <td><span class="text-color date-text">12
-                      أكتوبر، 2025</span></td>
-                  <td><span
-                      class="status-badge bg-green-100 text-green-800">مكتمل</span>
-                  </td>
-                  <td><span class="money positive">+2500
-                      جنية</span></td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="td-wrapper">
-                      <div class="icon-circle bg-red-100"><i
-                          class="fa-solid fa-gas-pump"></i>
-                      </div>
-                      <div class="content">
-                        <h3>محطة وقود Shell</h3><span>شراء
-                          وقود</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div
-                      class="category-badge bg-red-100 text-red-800">
-                      <i
-                        class="fa-solid fa-car"></i><span>مواصلات</span>
-                    </div>
-                  </td>
-                  <td><span class="text-color date-text">12
-                      أكتوبر، 2025</span></td>
-                  <td><span
-                      class="status-badge pending-status">معلق</span>
-                  </td>
-                  <td><span class="money negative">-700
-                      جنية</span></td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="td-wrapper">
-                      <div
-                        class="icon-circle bg-indigo-100"><i
-                          class="fa-solid fa-film"></i>
-                      </div>
-                      <div class="content">
-                        <h3>اشتراك Netflix</h3><span>اشتراك
-                          شهري</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div
-                      class="category-badge bg-indigo-100 text-indigo-800">
-                      <i
-                        class="fa-solid fa-tv"></i><span>ترفيه</span>
-                    </div>
-                  </td>
-                  <td><span class="text-color date-text">11
-                      أكتوبر، 2025</span></td>
-                  <td><span
-                      class="status-badge bg-green-100 text-green-800">مكتمل</span>
-                  </td>
-                  <td><span class="money negative">-780
-                      جنية</span></td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="td-wrapper">
-                      <div class="icon-circle bg-cyan-100">
-                        <i class="fa-solid fa-dumbbell"></i>
-                      </div>
-                      <div class="content">
-                        <h3>نادي FitLife</h3><span>عضوية
-                          شهرية</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div
-                      class="category-badge bg-cyan-100 text-cyan-800">
-                      <i
-                        class="fa-solid fa-heart-pulse"></i><span>صحة</span>
-                    </div>
-                  </td>
-                  <td><span class="text-color date-text">10
-                      أكتوبر، 2025</span></td>
-                  <td><span
-                      class="status-badge bg-green-100 text-green-800">مكتمل</span>
-                  </td>
-                  <td><span class="money negative">-500
-                      جنية</span></td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="td-wrapper">
-                      <div
-                        class="icon-circle bg-emerald-100">
-                        <i
-                          class="fa-solid fa-graduation-cap"></i>
-                      </div>
-                      <div class="content">
-                        <h3>كورس Jonas</h3><span>دورة
-                          تدريبية</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div
-                      class="category-badge bg-emerald-100 text-emerald-800">
-                      <i
-                        class="fa-solid fa-book"></i><span>تعليم</span>
-                    </div>
-                  </td>
-                  <td><span class="text-color date-text">9
-                      أكتوبر، 2025</span></td>
-                  <td><span
-                      class="status-badge bg-green-100 text-green-800">مكتمل</span>
-                  </td>
-                  <td><span class="money negative">-250
-                      جنية</span></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
-        <!--End recent section-->
-
-        <!--Start monthely section-->
-        <section class="card monthely">
-          <div class="card-header">
-            <h3 class="text-lg">الفواتير الشهرية</h3>
-            <span class="action-text">عرض الكل <i
-                class="fa-solid fa-chevron-left"></i></span>
-          </div>
-          <div class="bills-total">
-            <p class="amount">1920 جنية</p>
-            <p class="desc">إجمالي الفواتير الشهرية</p>
-          </div>
-          <div class="bills-grid">
-            <div class="bill-item">
-              <div class="icon-box blue-box"><i
-                  class="fa-solid fa-wifi"></i></div>
-              <p class="bill-name">إنترنت</p>
-              <p class="bill-amount">450 جنية</p>
-              <p class="bill-due due-red">يستحق في 3 أيام
-              </p>
-            </div>
-            <div class="bill-item">
-              <div class="icon-box yellow-box"><i
-                  class="fa-solid fa-bolt"></i></div>
-              <p class="bill-name">كهرباء</p>
-              <p class="bill-amount">400 جنية</p>
-              <p class="bill-due due-orange">يستحق في 5 أيام
-              </p>
-            </div>
-            <div class="bill-item">
-              <div class="icon-box green-box"><i
-                  class="fa-solid fa-phone"></i></div>
-              <p class="bill-name">هاتف</p>
-              <p class="bill-amount">290 جنية</p>
-              <p class="bill-due due-green">يستحق في 10 أيام
-              </p>
-            </div>
-            <div class="bill-item">
-              <div class="icon-box red-box"><i
-                  class="fa-solid fa-tv"></i></div>
-              <p class="bill-name">Netflix</p>
-              <p class="bill-amount">780 جنية</p>
-              <p class="bill-due due-gray">يستحق في 15 يوم
-              </p>
-            </div>
-          </div>
-        </section>
-        <!--End monthely section-->
-
-        <!--Start Income-versus-expenses section-->
-        <section class="card Income-versus-expenses">
-          <div class="card-header">
-            <h3 class="text-lg">الدخل مقابل المصروفات</h3>
-            <span class="action-text">التحليل <i
-                class="fa-solid fa-chevron-left"></i></span>
-          </div>
-          <div class="chart-container">
-            <div class="chart-legend">
-              <div class="legend-item">
-                <div class="color-box income-color"></div>
-                <span>الدخل</span>
-              </div>
-              <div class="legend-item">
-                <div class="color-box expense-color"></div>
-                <span>المصروفات</span>
-              </div>
-            </div>
-            <div class="chart-grouped">
-              <div class="chart-group">
-                <div class="chart-bars">
-                  <div class="bar income-bar h-95"></div>
-                  <div class="bar expense-bar h-42"></div>
-                </div>
-                <div class="chart-label">الأسبوع 1</div>
-              </div>
-              <div class="chart-group">
-                <div class="chart-bars">
-                  <div class="bar income-bar h-98"></div>
-                  <div class="bar expense-bar h-45"></div>
-                </div>
-                <div class="chart-label">الأسبوع 2</div>
-              </div>
-              <div class="chart-group">
-                <div class="chart-bars">
-                  <div class="bar income-bar h-92"></div>
-                  <div class="bar expense-bar h-38"></div>
-                </div>
-                <div class="chart-label">الأسبوع 3</div>
-              </div>
-              <div class="chart-group">
-                <div class="chart-bars">
-                  <div class="bar income-bar h-96"></div>
-                  <div class="bar expense-bar h-45"></div>
-                </div>
-                <div class="chart-label">الأسبوع 4</div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!--End Income-versus-expenses section-->
-
-        <!--Start Payment-methods section-->
-        <section class="card Payment-methods">
-          <div class="payment-header">
-            <div class="right">
-              <h2>وسائل الدفع</h2>
-            </div>
-            <div class="left">
-              <span>إدارة</span>
-              <i class="fa-solid fa-chevron-left"></i>
-            </div>
-          </div>
-          <div class="payment-cards-list">
-            <div class="card-flip">
-              <div class="card-inner">
-                <div class="card-front payment-card visa">
-                  <div class="primary-badge">أساسية</div>
-                  <div class="card-top">
-                    <img src="./assets/icons/chip.png"
-                      alt="Chip" class="chip-image">
-                    <i
-                      class="fa-brands fa-cc-visa text-3xl"></i>
-                  </div>
-                  <div class="card-bottom">
-                    <p class="card-number">•••• •••• ••••
-                      4532</p>
-                    <div class="card-info">
-                      <div class="info-right">
-                        <p class="label">حامل البطاقة</p>
-                        <p class="value">سيف أسامة</p>
-                      </div>
-                      <div class="info-left text-left">
-                        <p class="label">تنتهي</p>
-                        <p class="value ltr-text">12/26</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="card-back payment-card visa-back">
-                  <div class="mag-stripe"></div>
-                  <div class="card-back-content">
-                    <div class="microprint">توقيع معتمد -
-                      غير صالحة بدون توقيع</div>
-                    <div class="signature">
-                      <div class="last4">4532</div>
-                    </div>
-                    <div class="cvv-row">
-                      <div class="cvv-container">
-                        <div class="cvv-label">CVV</div>
-                        <div class="cvv-box">123</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-flip">
-              <div class="card-inner">
-                <div
-                  class="card-front payment-card mastercard">
-                  <div class="card-top">
-                    <img src="./assets/icons/chip.png"
-                      alt="Chip" class="chip-image">
-                    <i
-                      class="fa-brands fa-cc-mastercard text-3xl"></i>
-                  </div>
-                  <div class="card-bottom">
-                    <p class="card-number">•••• •••• ••••
-                      8901</p>
-                    <div class="card-info">
-                      <div class="info-right">
-                        <p class="label text-red-100">حامل
-                          البطاقة</p>
-                        <p class="value">سيف أسامة</p>
-                      </div>
-                      <div class="info-left text-left">
-                        <p class="label text-red-100">تنتهي
-                        </p>
-                        <p class="value ltr-text">08/27</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="card-back payment-card mastercard-back">
-                  <div class="mag-stripe"></div>
-                  <div class="card-back-content">
-                    <div class="microprint">توقيع معتمد -
-                      غير صالحة بدون توقيع</div>
-                    <div class="signature">
-                      <div class="last4">8901</div>
-                    </div>
-                    <div class="cvv-row">
-                      <div class="cvv-container">
-                        <div class="cvv-label">CVV</div>
-                        <div class="cvv-box">456</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-flip">
-              <div class="card-inner">
-                <div class="card-front payment-card paypal">
-                  <div class="card-top">
-                    <img src="./assets/icons/chip.png"
-                      alt="Chip" class="chip-image">
-                    <i
-                      class="fa-brands fa-paypal text-3xl"></i>
-                  </div>
-                  <div class="card-bottom">
-                    <p class="paypal-number">حساب Paypal</p>
-                    <div class="card-info">
-                      <div class="info-right">
-                        <p class="label">الإيميل</p>
-                        <p
-                          class="value ltr-text text-right">
-                          seif@example.com</p>
-                      </div>
-                      <div class="info-left text-left">
-                        <p class="label">الحالة</p>
-                        <p
-                          class="value text-success font-bold">
-                          موثق</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="card-back payment-card paypal-back">
-                  <div class="mag-stripe"></div>
-                  <div class="card-back-content">
-                    <div class="microprint">توقيع معتمد -
-                      غير صالحة بدون توقيع</div>
-                    <div class="signature">
-                      <div class="last4">PP01</div>
-                    </div>
-                    <div class="cvv-row">
-                      <div class="cvv-container">
-                        <div class="cvv-label">ID</div>
-                        <div class="cvv-box">PP-01</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!--End Payment-methods section-->
-
-        <!--Start budget section-->
-        <section class="card budget">
-          <div class="budget-header">
-            <h3 class="budget-title">نظرة عامة على الميزانية
-            </h3>
-            <div class="budget-action">
-              <span>التفاصيل</span>
-              <i class="fa-solid fa-chevron-left"></i>
-            </div>
-          </div>
-
-          <div class="budget-summary">
-            <div class="budget-summary-top">
-              <div class="total-budget">
-                <p class="label">إجمالي الميزانية</p>
-                <p class="value">10000 جنية</p>
-              </div>
-              <div class="remaining-budget">
-                <p class="label">المتبقي</p>
+            <div class="row align-items-center pt-4">
+              <!-- Left Column -->
+              <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+                <h2
+                  class="display-6 fw-bolder mb-3 text-dark">
+                  Home Buying Made Simple</h2>
                 <p
-                  class="value text-success font-bold text-lg">
-                  1750 جنية</p>
+                  class="text-secondary fs-6 mb-5 tab-pane-subtitle">
+                  Our expert team guides you through every
+                  step of the home buying process, from
+                  initial search to closing day.</p>
+
+                <div class="d-flex flex-column gap-4 mb-5">
+                  <!-- Card 1 -->
+                  <div
+                    class="service-feature d-flex align-items-start gap-3">
+                    <div
+                      class="text-primary rounded-3 d-flex align-items-center justify-content-center service-icon-box primary-theme">
+                      <i
+                        class="fa-solid fa-magnifying-glass fs-5"></i>
+                    </div>
+                    <div>
+                      <h5 class="fw-bold mb-2">Property
+                        Search</h5>
+                      <p class="text-secondary mb-0 fs-6">
+                        Access exclusive listings and get
+                        notified of new properties that
+                        match your criteria.</p>
+                    </div>
+                  </div>
+
+                  <!-- Card 2 -->
+                  <div
+                    class="service-feature d-flex align-items-start gap-3">
+                    <div
+                      class="text-primary rounded-3 d-flex align-items-center justify-content-center service-icon-box primary-theme">
+                      <i
+                        class="fa-solid fa-calculator fs-5"></i>
+                    </div>
+                    <div>
+                      <h5 class="fw-bold mb-2">Financial
+                        Planning</h5>
+                      <p class="text-secondary mb-0 fs-6">
+                        Get pre-approved for mortgages and
+                        understand your budget with our
+                        financial experts.</p>
+                    </div>
+                  </div>
+
+                  <!-- Card 3 -->
+                  <div
+                    class="service-feature d-flex align-items-start gap-3">
+                    <div
+                      class="text-primary rounded-3 d-flex align-items-center justify-content-center service-icon-box primary-theme">
+                      <i
+                        class="fa-solid fa-handshake fs-5"></i>
+                    </div>
+                    <div>
+                      <h5 class="fw-bold mb-2">Negotiation
+                        Support</h5>
+                      <p class="text-secondary mb-0 fs-6">
+                        Our skilled negotiators ensure you
+                        get the best possible deal on your
+                        dream home.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <button
+                  class="btn btn-primary px-5 py-3 fs-5 rounded-3 fw-medium">Start
+                  Your Search</button>
               </div>
-            </div>
-            <div class="budget-progress">
-              <div class="progress-labels">
-                <span>المستخدم: 8250 جنية</span>
-                <span>82.5%</span>
-              </div>
-              <div class="progress-bar-bg">
+
+              <!-- Right Column -->
+              <div
+                class="col-12 col-lg-6 position-relative ps-lg-5">
+                <img src="./assets/service-img-1.png"
+                  alt="Family with keys"
+                  class="img-fluid rounded-4 shadow-lg w-100 object-fit-cover tab-pane-image">
+
+                <!-- Success Rate Card -->
                 <div
-                  class="progress-bar-fill gradient-blue w-82-5">
+                  class="position-absolute bg-white rounded-3 shadow-lg p-4 floating-card card-left">
+                  <h3
+                    class="text-primary fw-bolder mb-1 fs-2">
+                    98%</h3>
+                  <p class="text-secondary mb-0 fs-6">
+                    Success Rate</p>
                 </div>
               </div>
             </div>
+
           </div>
+          <div class="tab-pane fade" id="profile-tab-pane"
+            role="tabpanel" aria-labelledby="profile-tab"
+            tabindex="0">
 
-          <div class="budget-categories">
-            <div class="budget-category">
-              <div class="category-info">
-                <div class="right">
-                  <div class="icon-wrapper orange-bg">
-                    <i
-                      class="fa-solid fa-film text-orange"></i>
+            <div class="row align-items-center pt-4">
+              <!-- Left Column -->
+              <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+                <h2
+                  class="display-6 fw-bolder mb-3 text-dark">
+                  Maximize Your Home's Value</h2>
+                <p
+                  class="text-secondary fs-6 mb-5 tab-pane-subtitle">
+                  Sell your property quickly and for the
+                  best price with our comprehensive
+                  marketing strategy and expert guidance.
+                </p>
+
+                <div class="d-flex flex-column gap-4 mb-5">
+                  <!-- Card 1 -->
+                  <div
+                    class="service-feature d-flex align-items-start gap-3">
+                    <div
+                      class="text-success rounded-3 d-flex align-items-center justify-content-center service-icon-box success-theme">
+                      <i
+                        class="fa-solid fa-chart-line fs-5"></i>
+                    </div>
+                    <div>
+                      <h5 class="fw-bold mb-2">Market
+                        Analysis</h5>
+                      <p class="text-secondary mb-0 fs-6">
+                        Get a comprehensive market analysis
+                        to price your home competitively.
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <p class="cat-name">ترفيه</p>
-                    <p class="cat-desc">الميزانية: 1500 جنية
-                    </p>
+
+                  <!-- Card 2 -->
+                  <div
+                    class="service-feature d-flex align-items-start gap-3">
+                    <div
+                      class="text-success rounded-3 d-flex align-items-center justify-content-center service-icon-box success-theme">
+                      <i
+                        class="fa-solid fa-camera fs-5"></i>
+                    </div>
+                    <div>
+                      <h5 class="fw-bold mb-2">Professional
+                        Marketing</h5>
+                      <p class="text-secondary mb-0 fs-6">
+                        High-quality photography, virtual
+                        tours, and multi-channel marketing
+                        campaigns.</p>
+                    </div>
+                  </div>
+
+                  <!-- Card 3 -->
+                  <div
+                    class="service-feature d-flex align-items-start gap-3">
+                    <div
+                      class="text-success rounded-3 d-flex align-items-center justify-content-center service-icon-box success-theme">
+                      <i class="fa-solid fa-users fs-5"></i>
+                    </div>
+                    <div>
+                      <h5 class="fw-bold mb-2">Buyer
+                        Screening</h5>
+                      <p class="text-secondary mb-0 fs-6">We
+                        pre-qualify buyers to ensure serious
+                        inquiries and smooth transactions.
+                      </p>
+                    </div>
                   </div>
                 </div>
-                <div class="left">
-                  <p class="cat-amount">750 جنية</p>
-                  <span
-                    class="cat-status green-status">متبقي
-                    50%</span>
-                </div>
+
+                <button
+                  class="btn btn-success px-5 py-3 fs-5 rounded-3 fw-medium">Get
+                  Home Valuation</button>
               </div>
-              <div class="progress-bar-bg">
+
+              <!-- Right Column -->
+              <div
+                class="col-12 col-lg-6 position-relative ps-lg-5">
+                <img src="./assets/service-img-2.png"
+                  alt="Real estate agent"
+                  class="img-fluid rounded-4 shadow-lg w-100 object-fit-cover tab-pane-image">
+
+                <!-- Success Rate Card -->
                 <div
-                  class="progress-bar-fill orange-fill w-50">
+                  class="position-absolute bg-white rounded-3 shadow-lg p-4 floating-card card-right">
+                  <h3
+                    class="text-success fw-bolder mb-1 fs-2">
+                    21 days</h3>
+                  <p class="text-secondary mb-0 fs-6">Avg.
+                    Time to Sell</p>
                 </div>
               </div>
             </div>
 
-            <div class="budget-category">
-              <div class="category-info">
-                <div class="right">
-                  <div class="icon-wrapper red-bg">
-                    <i
-                      class="fa-solid fa-file-invoice-dollar text-red"></i>
-                  </div>
-                  <div>
-                    <p class="cat-name">فواتير</p>
-                    <p class="cat-desc">الميزانية: 2000 جنية
-                    </p>
-                  </div>
-                </div>
-                <div class="left">
-                  <p class="cat-amount">2000 جنية</p>
-                  <span class="cat-status red-status">مستخدم
-                    100%</span>
-                </div>
-              </div>
-              <div class="progress-bar-bg">
-                <div
-                  class="progress-bar-fill red-fill w-100">
-                </div>
-              </div>
-            </div>
-
-            <div class="budget-category">
-              <div class="category-info">
-                <div class="right">
-                  <div class="icon-wrapper pink-bg">
-                    <i
-                      class="fa-solid fa-heart text-pink"></i>
-                  </div>
-                  <div>
-                    <p class="cat-name">العناية الشخصية</p>
-                    <p class="cat-desc">الميزانية: 1500 جنية
-                    </p>
-                  </div>
-                </div>
-                <div class="left">
-                  <p class="cat-amount">1200 جنية</p>
-                  <span
-                    class="cat-status yellow-status">متبقي
-                    20%</span>
-                </div>
-              </div>
-              <div class="progress-bar-bg">
-                <div
-                  class="progress-bar-fill pink-fill w-80">
-                </div>
-              </div>
-            </div>
-
-            <div class="budget-category">
-              <div class="category-info">
-                <div class="right">
-                  <div class="icon-wrapper green-bg">
-                    <i
-                      class="fa-solid fa-shopping-cart text-green"></i>
-                  </div>
-                  <div>
-                    <p class="cat-name">مستلزمات المنزل</p>
-                    <p class="cat-desc">الميزانية: 5000 جنية
-                    </p>
-                  </div>
-                </div>
-                <div class="left">
-                  <p class="cat-amount">4300 جنية</p>
-                  <span
-                    class="cat-status green-status">متبقي
-                    14%</span>
-                </div>
-              </div>
-              <div class="progress-bar-bg">
-                <div
-                  class="progress-bar-fill green-fill w-86">
-                </div>
-              </div>
-            </div>
           </div>
-        </section>
-        <!--End budget section-->
+          <div class="tab-pane fade" id="contact-tab-pane"
+            role="tabpanel" aria-labelledby="contact-tab"
+            tabindex="0">
 
-        <!--Start Account-Summary section-->
-        <section class="card Account-Summary">
-          <div class="card-header">
-            <h3 class="text-lg">ملخص الحساب</h3>
-            <span class="action-text">التفاصيل <i
-                class="fa-solid fa-chevron-left"></i></span>
+            <div class="row align-items-center pt-4">
+              <!-- Left Column -->
+              <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+                <h2
+                  class="display-6 fw-bolder mb-3 text-dark">
+                  Premium Rental Properties</h2>
+                <p
+                  class="text-secondary fs-6 mb-5 tab-pane-subtitle">
+                  Find your perfect rental home with our
+                  extensive portfolio of quality properties
+                  and personalized service.</p>
+
+                <div class="d-flex flex-column gap-4 mb-5">
+                  <!-- Card 1 -->
+                  <div
+                    class="service-feature d-flex align-items-start gap-3">
+                    <div
+                      class="text-primary rounded-3 d-flex align-items-center justify-content-center service-icon-box primary-theme">
+                      <i
+                        class="fa-solid fa-map-location-dot fs-5"></i>
+                    </div>
+                    <div>
+                      <h5 class="fw-bold mb-2">Prime
+                        Locations</h5>
+                      <p class="text-secondary mb-0 fs-6">
+                        Access rentals in the most desirable
+                        neighborhoods and communities.</p>
+                    </div>
+                  </div>
+
+                  <!-- Card 2 -->
+                  <div
+                    class="service-feature d-flex align-items-start gap-3">
+                    <div
+                      class="text-primary rounded-3 d-flex align-items-center justify-content-center service-icon-box primary-theme">
+                      <i
+                        class="fa-solid fa-shield-halved fs-5"></i>
+                    </div>
+                    <div>
+                      <h5 class="fw-bold mb-2">Verified
+                        Properties</h5>
+                      <p class="text-secondary mb-0 fs-6">
+                        All our rental properties are
+                        thoroughly inspected and verified
+                        for quality.</p>
+                    </div>
+                  </div>
+
+                  <!-- Card 3 -->
+                  <div
+                    class="service-feature d-flex align-items-start gap-3">
+                    <div
+                      class="text-primary rounded-3 d-flex align-items-center justify-content-center service-icon-box primary-theme">
+                      <i
+                        class="fa-solid fa-screwdriver-wrench fs-5"></i>
+                    </div>
+                    <div>
+                      <h5 class="fw-bold mb-2">24/7 Support
+                      </h5>
+                      <p class="text-secondary mb-0 fs-6">
+                        Round-the-clock maintenance and
+                        tenant support services.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <button
+                  class="btn btn-primary px-5 py-3 fs-5 rounded-3 fw-medium">Browse
+                  Rentals</button>
+              </div>
+
+              <!-- Right Column -->
+              <div
+                class="col-12 col-lg-6 position-relative ps-lg-5">
+                <img src="./assets/service-img-3.png"
+                  alt="Premium Rental Properties"
+                  class="img-fluid rounded-4 shadow-lg w-100 object-fit-cover tab-pane-image">
+
+                <!-- Success Rate Card -->
+                <div
+                  class="position-absolute bg-white rounded-3 shadow-lg p-4 floating-card card-left">
+                  <h3
+                    class="text-primary fw-bolder mb-1 fs-2">
+                    5,000+</h3>
+                  <p class="text-secondary mb-0 fs-6">
+                    Available Rentals</p>
+                </div>
+              </div>
+            </div>
+
           </div>
-          <div class="account-list">
-            <div class="account-item">
-              <div class="right">
-                <div class="icon-box blue-box"><i
-                    class="fa-solid fa-university"></i>
+          <div class="tab-pane fade" id="investing-tab-pane"
+            role="tabpanel" aria-labelledby="investing-tab"
+            tabindex="0">
+
+            <div class="row align-items-center pt-4">
+              <!-- Left Column -->
+              <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+                <h2
+                  class="display-6 fw-bolder mb-3 text-dark">
+                  Real Estate Investment</h2>
+                <p
+                  class="text-secondary fs-6 mb-5 tab-pane-subtitle">
+                  Build wealth through strategic real estate
+                  investments with our expert guidance and
+                  market insights.</p>
+
+                <div class="d-flex flex-column gap-4 mb-5">
+                  <!-- Card 1 -->
+                  <div
+                    class="service-feature d-flex align-items-start gap-3">
+                    <div
+                      class="text-custom-warning rounded-3 d-flex align-items-center justify-content-center service-icon-box warning-theme">
+                      <i
+                        class="fa-solid fa-chart-pie fs-5"></i>
+                    </div>
+                    <div>
+                      <h5 class="fw-bold mb-2">Portfolio
+                        Analysis</h5>
+                      <p class="text-secondary mb-0 fs-6">
+                        Comprehensive analysis of investment
+                        opportunities and portfolio
+                        optimization.</p>
+                    </div>
+                  </div>
+
+                  <!-- Card 2 -->
+                  <div
+                    class="service-feature d-flex align-items-start gap-3">
+                    <div
+                      class="text-custom-warning rounded-3 d-flex align-items-center justify-content-center service-icon-box warning-theme">
+                      <i
+                        class="fa-solid fa-money-bill-wave fs-5"></i>
+                    </div>
+                    <div>
+                      <h5 class="fw-bold mb-2">ROI
+                        Projections</h5>
+                      <p class="text-secondary mb-0 fs-6">
+                        Detailed return on investment
+                        calculations and market forecasting.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Card 3 -->
+                  <div
+                    class="service-feature d-flex align-items-start gap-3">
+                    <div
+                      class="text-custom-warning rounded-3 d-flex align-items-center justify-content-center service-icon-box warning-theme">
+                      <i class="fa-solid fa-gear fs-5"></i>
+                    </div>
+                    <div>
+                      <h5 class="fw-bold mb-2">Property
+                        Management</h5>
+                      <p class="text-secondary mb-0 fs-6">
+                        Full-service property management for
+                        hands-off investment experience.</p>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <p class="acc-name">حساب جاري</p>
-                  <p class="acc-details">بنك <span
-                      class="ltr-text">مصر</span> <span
-                      class="ltr-text">[•••• 4532]</span>
-                  </p>
+
+                <button
+                  class="btn btn-custom-warning px-5 py-3 fs-5 rounded-3 fw-medium">Explore
+                  Investments</button>
+              </div>
+
+              <!-- Right Column -->
+              <div
+                class="col-12 col-lg-6 position-relative ps-lg-5">
+                <img src="./assets/service-img-4.png"
+                  alt="Real Estate Investment"
+                  class="img-fluid rounded-4 shadow-lg w-100 object-fit-cover tab-pane-image">
+
+                <!-- Success Rate Card -->
+                <div
+                  class="position-absolute bg-white rounded-3 shadow-lg p-4 floating-card card-right">
+                  <h3
+                    class="text-custom-warning fw-bolder mb-1 fs-2">
+                    15%</h3>
+                  <p class="text-secondary mb-0 fs-6">Avg.
+                    Annual ROI</p>
                 </div>
               </div>
-              <p class="acc-amount">8,450 جنية</p>
             </div>
-            <div class="account-item">
-              <div class="right">
-                <div class="icon-box green-box"><i
-                    class="fa-solid fa-piggy-bank"></i>
-                </div>
-                <div>
-                  <p class="acc-name">حساب التوفير</p>
-                  <p class="acc-details">بنك <span
-                      class="ltr-text">مصر</span> <span
-                      class="ltr-text">[•••• 8901]</span>
-                  </p>
-                </div>
-              </div>
-              <p class="acc-amount">297,540 جنية</p>
-            </div>
-            <div class="account-item">
-              <div class="right">
-                <div class="icon-box purple-box"><i
-                    class="fa-solid fa-credit-card"></i>
-                </div>
-                <div>
-                  <p class="acc-name">بطاقة ائتمان</p>
-                  <p class="acc-details">متاح: 1,850 جنية من
-                    2,500 جنية</p>
-                </div>
-              </div>
-              <p class="acc-amount text-red">- 6,000 جنية
-              </p>
-            </div>
+
           </div>
-        </section>
-        <!--End Account-Summary section-->
+          <div class="tab-pane fade"
+            id="commercial-tab-pane" role="tabpanel"
+            aria-labelledby="commercial-tab" tabindex="0">
 
+            <div class="row align-items-center pt-4">
+              <!-- Left Column -->
+              <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+                <h2
+                  class="display-6 fw-bolder mb-3 text-dark">
+                  Commercial Real Estate</h2>
+                <p
+                  class="text-secondary fs-6 mb-5 tab-pane-subtitle">
+                  Expert commercial real estate services for
+                  businesses, investors, and developers.</p>
 
+                <div class="d-flex flex-column gap-4 mb-5">
+                  <!-- Card 1 -->
+                  <div
+                    class="service-feature d-flex align-items-start gap-3">
+                    <div
+                      class="text-custom-indigo rounded-3 d-flex align-items-center justify-content-center service-icon-box indigo-theme">
+                      <i
+                        class="fa-solid fa-building fs-5"></i>
+                    </div>
+                    <div>
+                      <h5 class="fw-bold mb-2">Office Spaces
+                      </h5>
+                      <p class="text-secondary mb-0 fs-6">
+                        Prime office locations for
+                        businesses of all sizes and
+                        industries.</p>
+                    </div>
+                  </div>
+
+                  <!-- Card 2 -->
+                  <div
+                    class="service-feature d-flex align-items-start gap-3">
+                    <div
+                      class="text-custom-indigo rounded-3 d-flex align-items-center justify-content-center service-icon-box indigo-theme">
+                      <i
+                        class="fa-solid fa-warehouse fs-5"></i>
+                    </div>
+                    <div>
+                      <h5 class="fw-bold mb-2">Industrial
+                        Properties</h5>
+                      <p class="text-secondary mb-0 fs-6">
+                        Warehouses, manufacturing
+                        facilities, and distribution
+                        centers.</p>
+                    </div>
+                  </div>
+
+                  <!-- Card 3 -->
+                  <div
+                    class="service-feature d-flex align-items-start gap-3">
+                    <div
+                      class="text-custom-indigo rounded-3 d-flex align-items-center justify-content-center service-icon-box indigo-theme">
+                      <i class="fa-solid fa-store fs-5"></i>
+                    </div>
+                    <div>
+                      <h5 class="fw-bold mb-2">Retail Spaces
+                      </h5>
+                      <p class="text-secondary mb-0 fs-6">
+                        High-traffic retail locations and
+                        shopping center opportunities.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <button
+                  class="btn btn-custom-indigo px-5 py-3 fs-5 rounded-3 fw-medium">View
+                  Commercial Properties</button>
+              </div>
+
+              <!-- Right Column -->
+              <div
+                class="col-12 col-lg-6 position-relative ps-lg-5">
+                <img src="./assets/service-img-5.png"
+                  alt="Commercial Real Estate"
+                  class="img-fluid rounded-4 shadow-lg w-100 object-fit-cover tab-pane-image">
+
+                <!-- Success Rate Card -->
+                <div
+                  class="position-absolute bg-white rounded-3 shadow-lg p-4 floating-card card-left">
+                  <h3
+                    class="text-custom-indigo fw-bolder mb-1 fs-2">
+                    $2.5B</h3>
+                  <p class="text-secondary mb-0 fs-6">
+                    Commercial Volume</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
-    </main>
-    <!--End main-->
+    </div>
+  </section>
+  <!-- End Services Section -->
 
-  </div>
-  <!--End app- wrapper-->
+
+  <!-- Client Stories Section -->
+  <section class="py-5 bg-dark-section" id="client-stories">
+    <div class="container py-5">
+
+      <!-- Section Title -->
+      <div class="text-center mb-5">
+        <div
+          class="d-flex align-items-center justify-content-center mb-3">
+          <div class="title-line left title-line-orange">
+          </div>
+          <span
+            class="bg-white text-primary fw-bold mx-3 px-4 py-2 text-uppercase rounded-pill fs-10">Client
+            Stories</span>
+          <div class="title-line right title-line-orange">
+          </div>
+        </div>
+        <h2 class="display-4 fw-bolder mb-3 text-white">What
+          Our Clients Say</h2>
+        <p
+          class="text-white opacity-75 mx-auto fs-5 max-w-800">
+          Hear from satisfied homeowners who found their
+          dream properties with<br>EliteHomes
+        </p>
+      </div>
+
+      <div id="testimonialCarousel"
+        class="carousel slide position-relative pb-5"
+        data-bs-ride="carousel" data-bs-interval="3000">
+        <!-- Indicators -->
+        <div class="carousel-indicators custom-indicators">
+          <button type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide-to="0" class="active"
+            aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+        </div>
+
+        <!-- Carousel Inner -->
+        <div class="carousel-inner">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div
+              class="client-card bg-white p-4 rounded-4 shadow-lg">
+              <div class="d-flex align-items-center mb-3">
+                <div class="text-warning fs-5 me-3">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-secondary fw-medium">5.0
+                  out of 5</span>
+              </div>
+              <p class="fs-5 mb-3 lh-18">
+                "EliteHomes made our home buying experience
+                absolutely
+                seamless. Sarah and her team went above and
+                beyond to help
+                us find the perfect family home in Beverly
+                Hills. Their
+                market knowledge and negotiation skills
+                saved us over
+                $100,000 on our purchase. We couldn't be
+                happier!"
+              </p>
+              <div class="d-flex align-items-center">
+                <img src="./assets/avatar-2.jpg"
+                  alt="Jennifer & Mark Thompson"
+                  class="client-avatar rounded-circle me-3 object-fit-cover">
+                <div>
+                  <h6 class="fw-bold mb-1 fs-5 text-dark">
+                    Jennifer & Mark Thompson</h6>
+                  <p class="text-secondary mb-0 fs-7">
+                    Beverly Hills Homeowners<br>Purchased
+                    $2.8M Family Estate</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div
+              class="client-card bg-white p-4 rounded-4 shadow-lg">
+              <div class="d-flex align-items-center mb-3">
+                <div class="text-warning fs-5 me-3">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-secondary fw-medium">5.0
+                  out of 5</span>
+              </div>
+              <p class="fs-5 mb-3 lh-18">
+                "As first-time investors, we were nervous
+                about entering the
+                real estate market. The EliteHomes
+                investment team provided
+                incredible guidance and helped us build a
+                portfolio that's
+                already generating 18% annual returns. Their
+                expertise is
+                unmatched."
+              </p>
+              <div class="d-flex align-items-center">
+                <img src="./assets/avatar-1.jpg"
+                  alt="Amanda Chen"
+                  class="client-avatar rounded-circle me-3 object-fit-cover">
+                <div>
+                  <h6 class="fw-bold mb-1 fs-5 text-dark">
+                    David Rodriguez</h6>
+                  <p class="text-secondary mb-0 fs-7">
+                    Real Estate Investor<br>$1.2M Investment
+                    Portfolio
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div
+              class="client-card bg-white p-4 rounded-4 shadow-lg">
+              <div class="d-flex align-items-center mb-3">
+                <div class="text-warning fs-5 me-3">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-secondary fw-medium">5.0
+                  out of 5</span>
+              </div>
+              <p class="fs-5 mb-3 lh-18">
+                "Our company needed to relocate to a larger
+                office space
+                quickly. EliteHomes' commercial team found
+                us the perfect
+                building in downtown Austin with flexible
+                lease terms and
+                great amenities. They handled everything
+                professionally and
+                efficiently."
+              </p>
+              <div class="d-flex align-items-center">
+                <img src="./assets/avatar-3.jpg"
+                  alt="Michael Foster"
+                  class="client-avatar rounded-circle me-3 object-fit-cover">
+                <div>
+                  <h6 class="fw-bold mb-1 fs-5 text-dark">
+                    Michael Foster</h6>
+                  <p class="text-secondary mb-0 fs-7">CEO,
+                    TechStart Inc.<br>15,000 sq ft Office
+                    Lease</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="carousel-item">
+            <div
+              class="client-card bg-white p-4 rounded-4 shadow-lg">
+              <div class="d-flex align-items-center mb-3">
+                <div class="text-warning fs-5 me-3">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-secondary fw-medium">5.0
+                  out of 5</span>
+              </div>
+              <p class="fs-5 mb-3 lh-18">
+                "Selling our Manhattan penthouse was
+                stress-free thanks to
+                EliteHomes. They marketed it beautifully,
+                brought qualified
+                buyers, and we sold for 15% above asking
+                price in just 10
+                days. Their professional photography and
+                staging made all
+                the difference."
+              </p>
+              <div class="d-flex align-items-center">
+                <img src="./assets/avatar-4.jpg"
+                  alt="David Rodriguez"
+                  class="client-avatar rounded-circle me-3 object-fit-cover">
+                <div>
+                  <h6 class="fw-bold mb-1 fs-5 text-dark">
+                    Amanda Chen</h6>
+                  <p class="text-secondary mb-0 fs-7">Real
+                    Manhattan Seller<br>Sold $3.2M Penthouse
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Controls -->
+        <button
+          class="carousel-control-prev custom-carousel-btn"
+          type="button"
+          data-bs-target="#testimonialCarousel"
+          data-bs-slide="prev">
+          <i class="fa-solid fa-chevron-left"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next custom-carousel-btn"
+          type="button"
+          data-bs-target="#testimonialCarousel"
+          data-bs-slide="next">
+          <i class="fa-solid fa-chevron-right"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- End Client Stories Section -->
+
+
+
+  <!-- FAQ Section -->
+  <section id="faq" class="py-5 bg-main">
+    <div class="container py-5">
+      <!-- Section Header -->
+      <div class="text-center mb-5">
+        <div
+          class="d-flex align-items-center justify-content-center mb-3">
+          <div class="title-line left"></div>
+          <span
+            class="subtitle-badge text-primary px-3 py-1 rounded-pill fw-bold text-uppercase mx-3 fs-7 fs-xs ls-1">Help
+            Center</span>
+          <div class="title-line right"></div>
+        </div>
+        <h2 class="display-4 fw-bold text-primary mb-3">
+          Frequently Asked Questions</h2>
+        <p class="text-body fs-5 mx-auto max-w-650">Get
+          answers to the most
+          common questions about buying, selling, and
+          investing in real estate</p>
+      </div>
+
+      <!-- Accordion -->
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="accordion custom-accordion"
+            id="faqAccordion">
+
+            <!-- Item 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed text-dark fw-bold px-4 py-4"
+                  type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq1">
+                  How do I know if I'm ready to buy a home?
+                </button>
+              </h2>
+              <div id="faq1"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion">
+                <div
+                  class="accordion-body px-4 pb-4 pt-0 text-body fs-095 lh-17">
+                  You're ready to buy a home when you have
+                  stable income, a good credit score
+                  (typically 620+), a down payment saved
+                  (usually 10-20% of the home price), and
+                  you plan to stay in the area for at least
+                  3-5 years. Our team can help assess your
+                  financial readiness and connect you with
+                  mortgage pre-approval services.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed text-dark fw-bold px-4 py-4"
+                  type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq2">
+                  What's the best time of year to sell my
+                  home?
+                </button>
+              </h2>
+              <div id="faq2"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion">
+                <div
+                  class="accordion-body px-4 pb-4 pt-0 text-body fs-095 lh-17">
+                  Spring and early summer (March through
+                  June) are
+                  traditionally the best times to sell, as
+                  buyers are more
+                  active and homes show better with good
+                  weather. However,
+                  market conditions, local factors, and your
+                  personal timeline
+                  are more important than the season. We can
+                  help you
+                  determine the optimal timing based on
+                  current market
+                  conditions in your area.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed text-dark fw-bold px-4 py-4"
+                  type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq3">
+                  How much should I offer on a house?
+                </button>
+              </h2>
+              <div id="faq3"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion">
+                <div
+                  class="accordion-body px-4 pb-4 pt-0 text-body fs-095 lh-17">
+                  Your offer should be based on comparable
+                  sales in the area,
+                  the home's condition, current market
+                  conditions, and your
+                  budget. In competitive markets, you might
+                  need to offer at
+                  or above asking price. Our agents will
+                  provide a detailed
+                  comparative market analysis (CMA) to help
+                  you make a
+                  competitive yet reasonable offer.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed text-dark fw-bold px-4 py-4"
+                  type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq4">
+                  What are closing costs and who pays them?
+                </button>
+              </h2>
+              <div id="faq4"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion">
+                <div
+                  class="accordion-body px-4 pb-4 pt-0 text-body fs-095 lh-17">
+                  Closing costs typically range from 2-5% of
+                  the home's
+                  purchase price and include fees for loan
+                  origination,
+                  appraisal, title insurance, attorney fees,
+                  and taxes. Both
+                  buyers and sellers have closing costs,
+                  though they vary by
+                  location and can be negotiated. We'll
+                  provide a detailed
+                  breakdown of expected costs early in the
+                  process.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed text-dark fw-bold px-4 py-4"
+                  type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq5">
+                  Should I get a home inspection?
+                </button>
+              </h2>
+              <div id="faq5"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion">
+                <div
+                  class="accordion-body px-4 pb-4 pt-0 text-body fs-095 lh-17">
+                  Yes, absolutely! A professional home
+                  inspection typically
+                  costs $300-600 but can save you thousands
+                  by identifying
+                  potential issues before you buy. We
+                  recommend inspections
+                  for all property types and can connect you
+                  with qualified,
+                  licensed inspectors in your area.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed text-dark fw-bold px-4 py-4"
+                  type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq6">
+                  How long does it take to buy or sell a
+                  home?
+                </button>
+              </h2>
+              <div id="faq6"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion">
+                <div
+                  class="accordion-body px-4 pb-4 pt-0 text-body fs-095 lh-17">
+                  For buyers, the process typically takes
+                  30-45 days from
+                  offer acceptance to closing, though
+                  finding the right home
+                  can take weeks or months. For sellers, the
+                  average time on
+                  market varies by location and price range,
+                  but our
+                  properties typically sell within 28 days.
+                  We'll provide
+                  realistic timelines based on your specific
+                  situation and
+                  local market conditions.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 7 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed text-dark fw-bold px-4 py-4"
+                  type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq7">
+                  What makes EliteHomes different from other
+                  real estate companies?
+                </button>
+              </h2>
+              <div id="faq7"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion">
+                <div
+                  class="accordion-body px-4 pb-4 pt-0 text-body fs-095 lh-17">
+                  We combine cutting-edge technology with
+                  personalized
+                  service, offering virtual tours,
+                  AI-powered property
+                  matching, comprehensive market analytics,
+                  and a dedicated
+                  team of experts for each client. Our 98%
+                  client satisfaction
+                  rate and average 21-day selling time speak
+                  to our commitment
+                  to excellence and results.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End FAQ Section -->
+
+
+
+  <!-- Contact Section -->
+  <section id="contact"
+    class="py-5 position-relative overflow-hidden bg-white">
+    <div
+      class="position-absolute d-none d-md-block contact-decor-1">
+    </div>
+    <div
+      class="position-absolute d-none d-md-block contact-decor-2">
+    </div>
+
+    <div class="container py-5 position-relative z-index-1">
+      <!-- Section Header -->
+      <div class="text-center mb-5">
+        <div
+          class="d-flex align-items-center justify-content-center mb-3">
+          <div class="title-line left"></div>
+          <span
+            class="subtitle-badge text-primary px-3 py-1 rounded-pill fw-bold text-uppercase mx-3 fs-7 fs-xs ls-1">Contact
+            Us</span>
+          <div class="title-line right"></div>
+        </div>
+        <h2
+          class="display-4 fw-bold text-gradient-orange mb-3">
+          Get In Touch</h2>
+        <p class="text-body fs-6 fs-md-5 mx-auto max-w-700 px-3">Ready to
+          start your real estate journey? Our expert team is
+          here to help you<br class="d-none d-md-block"> every step of the way</p>
+      </div>
+
+      <!-- Contact Cards -->
+      <div class="row g-4 mb-5">
+
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-3">
+              <div
+                class="card contact-card h-100 shadow-sm rounded-4 p-4 text-start contact-card-call">
+                <div
+                  class="d-inline-flex align-items-center justify-content-center text-white rounded-4 mb-4 contact-icon-call">
+                  <i class="fa-solid fa-phone fs-4"></i>
+                </div>
+                <h5 class="fw-bold text-dark mb-2">Call Us
+                </h5>
+                <p class="text-secondary small mb-3">Mon-Fri
+                  from 8am to 5pm</p>
+                <a href="tel:+15551234567"
+                  class="fw-bold text-decoration-none mt-auto text-purple-dark">+1
+                  (555) 123-4567</a>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-3">
+              <div
+                class="card contact-card h-100 shadow-sm rounded-4 p-4 text-start contact-card-email">
+                <div
+                  class="d-inline-flex align-items-center justify-content-center text-white rounded-4 mb-4 contact-icon-email">
+                  <i class="fa-solid fa-envelope fs-4"></i>
+                </div>
+                <h5 class="fw-bold text-dark mb-2">Email Us
+                </h5>
+                <p class="text-secondary small mb-3">We'll
+                  respond within 24hrs</p>
+                <a href="mailto:info@elitehomes.com"
+                  class="fw-bold text-decoration-none mt-auto text-purple-light">info@elitehomes.com</a>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-3">
+              <div
+                class="card contact-card h-100 shadow-sm rounded-4 p-4 text-start contact-card-visit">
+                <div
+                  class="d-inline-flex align-items-center justify-content-center text-white rounded-4 mb-4 contact-icon-visit">
+                  <i
+                    class="fa-solid fa-location-dot fs-4"></i>
+                </div>
+                <h5 class="fw-bold text-dark mb-2">Visit Us
+                </h5>
+                <p class="text-secondary small mb-3">Come
+                  say hello</p>
+                <a href="#"
+                  class="fw-bold text-decoration-none mt-auto text-pink-custom">Beverly
+                  Hills, CA</a>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-3">
+              <div
+                class="card contact-card h-100 shadow-sm rounded-4 p-4 text-start contact-card-chat">
+                <div
+                  class="d-inline-flex align-items-center justify-content-center text-white rounded-4 mb-4 contact-icon-chat">
+                  <i class="fa-solid fa-comments fs-4"></i>
+                </div>
+                <h5 class="fw-bold text-dark mb-2">Live Chat
+                </h5>
+                <p class="text-secondary small mb-3">
+                  Available 24/7</p>
+                <a href="#"
+                  class="fw-bold text-decoration-none mt-auto text-indigo-custom">Start
+                  chatting &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+      <!-- Contact Form -->
+      <div class="row g-5">
+
+            <!-- Left Column-->
+            <div class="col-lg-4 d-flex flex-column gap-4">
+              <!-- Contact Info Card -->
+              <div
+                class="card shadow-sm border-0 rounded-4 p-4 position-relative overflow-hidden"
+                style="background-color: #f1f3f5;">
+                <h5
+                  class="fw-bold mb-4 position-relative z-1">
+                  Contact Information</h5>
+
+                <div class="d-flex align-items-start mb-4">
+                  <div
+                    class="me-3 flex-shrink-0 mt-1 text-purple">
+                    <i
+                      class="fa-solid fa-location-dot fs-4"></i>
+                  </div>
+                  <div>
+                    <h6 class="fw-bold mb-1 fs-sm">Address
+                    </h6>
+                    <p
+                      class="text-dark small mb-0 lh-17">
+                      1234 Luxury Boulevard<br>Beverly
+                      Hills, CA 90210</p>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-start mb-4">
+                  <div
+                    class="me-3 flex-shrink-0 mt-1 text-purple-dark">
+                    <i class="fa-solid fa-phone fs-4"></i>
+                  </div>
+                  <div>
+                    <h6 class="fw-bold mb-1 fs-sm">Phone
+                    </h6>
+                    <p
+                      class="text-dark small mb-0 lh-17">
+                      +1 (555) 123-4567<br>+1 (555) 987-6543
+                    </p>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-start mb-4">
+                  <div
+                    class="me-3 flex-shrink-0 mt-1 text-pink-custom">
+                    <i
+                      class="fa-solid fa-envelope fs-4"></i>
+                  </div>
+                  <div>
+                    <h6 class="fw-bold mb-1 fs-sm">Email
+                    </h6>
+                    <p
+                      class="text-dark small mb-0 lh-17">
+                      info@elitehomes.com<br>support@elitehomes.com
+                    </p>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-start">
+                  <div
+                    class="me-3 flex-shrink-0 mt-1 text-indigo-custom">
+                    <i class="fa-solid fa-clock fs-4"></i>
+                  </div>
+                  <div>
+                    <h6 class="fw-bold mb-1 fs-sm">Working
+                      Hours</h6>
+                    <p
+                      class="text-secondary small mb-0 lh-17">
+                      Mon-Fri: 8:00 AM - 8:00 PM<br>Sat-Sun:
+                      9:00 AM - 6:00 PM</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Connect With Us Card -->
+              <div
+                class="card shadow-sm border-0 rounded-4 p-4 contact-social-card text-white">
+                <h5 class="fw-bold mb-3">Connect With Us
+                </h5>
+                <p class="fs-sm mb-4">Follow us on social
+                  media for updates and insights</p>
+                <div class="d-flex justify-content-between">
+                  <a href="#"
+                    class="social-btn d-inline-flex align-items-center justify-content-center text-white text-decoration-none">
+                    <i
+                      class="fa-brands fa-facebook-f fs-5"></i>
+                  </a>
+                  <a href="#"
+                    class="social-btn d-inline-flex align-items-center justify-content-center text-white text-decoration-none">
+                    <i
+                      class="fa-brands fa-twitter fs-5"></i>
+                  </a>
+                  <a href="#"
+                    class="social-btn d-inline-flex align-items-center justify-content-center text-white text-decoration-none">
+                    <i
+                      class="fa-brands fa-instagram fs-5"></i>
+                  </a>
+                  <a href="#"
+                    class="social-btn d-inline-flex align-items-center justify-content-center text-white text-decoration-none">
+                    <i
+                      class="fa-brands fa-linkedin-in fs-5"></i>
+                  </a>
+                  <a href="#"
+                    class="social-btn d-inline-flex align-items-center justify-content-center text-white text-decoration-none">
+                    <i
+                      class="fa-brands fa-youtube fs-5"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column-->
+            <div class="col-lg-8">
+              <div
+                class="card shadow-sm rounded-4 p-4 h-100"
+                style="border: 2px solid #e5e7eb !important;">
+                <h3 class="fw-bold text-dark mb-2">Send us a
+                  message</h3>
+                <p class="text-secondary mb-4 fs-sm">Fill
+                  out the form below and we'll get back to
+                  you as soon as possible</p>
+
+                <form>
+                  <div class="row g-3 mb-3">
+                    <div class="col-md-6">
+                      <label
+                        class="form-label fs-sm fw-500">First
+                        Name <span
+                          class="text-danger">*</span></label>
+                      <input type="text"
+                        class="form-control form-control-custom"
+                        placeholder="John" required>
+                    </div>
+                    <div class="col-md-6">
+                      <label
+                        class="form-label fs-sm fw-500">Last
+                        Name <span
+                          class="text-danger">*</span></label>
+                      <input type="text"
+                        class="form-control form-control-custom"
+                        placeholder="Doe" required>
+                    </div>
+                  </div>
+
+                  <div class="row g-3 mb-3">
+                    <div class="col-md-6">
+                      <label
+                        class="form-label fs-sm fw-500">Email
+                        Address <span
+                          class="text-danger">*</span></label>
+                      <input type="email"
+                        class="form-control form-control-custom"
+                        placeholder="john@example.com"
+                        required>
+                    </div>
+                    <div class="col-md-6">
+                      <label
+                        class="form-label fs-sm fw-500">Phone
+                        Number</label>
+                      <input type="tel"
+                        class="form-control form-control-custom"
+                        placeholder="+1 (555) 000-0000">
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label
+                      class="form-label fs-sm fw-500">I'm
+                      interested in</label>
+                    <select
+                      class="form-select form-control-custom">
+                      <option selected>Select a service</option>
+                      <option value="1">Buying a home</option>
+                      <option value="2">Selling a home</option>
+                      <option value="3">Renting a property</option>
+                      <option value="4">Investment opportunities</option>
+                      <option value="5">Commercial real estate</option>
+                      <option value="6">Property management</option>
+                      <option value="7">Market consultation</option>
+                    </select>
+                  </div>
+
+                  <div class="mb-4">
+                    <label
+                      class="form-label fs-sm fw-500">Your
+                      Message <span
+                        class="text-danger">*</span></label>
+                    <textarea
+                      class="form-control form-control-custom"
+                      rows="4"
+                      placeholder="Tell us about your real estate needs..."
+                      style="resize: none;"
+                      required></textarea>
+                  </div>
+
+                  <div
+                    class="form-check d-flex align-items-center mb-4 px-4 py-3 rounded-3"
+                    style="background-color: var(--purple-light); border: 1px solid var(--main-light);">
+                    <input
+                      class="form-check-input custom-checkbox m-0"
+                      type="checkbox" id="termsCheck" style="width: 20px; height: 20px;">
+                    <label
+                      class="form-check-label text-dark ms-3"
+                      for="termsCheck">
+                      I agree to receive marketing
+                      communications and updates from
+                      EliteHomes
+                    </label>
+                  </div>
+
+                  <button type="submit"
+                    class="btn btn-purple-custom w-100 py-3 fw-bold rounded-3 mb-3 text-white">
+                    Send Message <i
+                      class="fa-solid fa-paper-plane ms-2"></i>
+                  </button>
+
+                  <p
+                    class="text-center text-secondary fs-085 mb-0">
+                    We respect your privacy. Your
+                    information will never be shared.</p>
+                </form>
+              </div>
+            </div>
+
+          </div>
+    </div>
+    <div
+      class="position-absolute d-none d-md-block contact-decor-3">
+    </div>
+    <div
+      class="position-absolute d-none d-md-block contact-decor-4">
+    </div>
+
+  </section>
+  <!-- End Contact Section -->
+
+
+  <!-- Footer Section -->
+  <footer class="pt-5 pb-4" style="background-color: #47257b;">
+    <div class="container">
+      <div class="row align-items-center mb-4">
+        <!-- Logo -->
+        <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
+          <h4 class="text-white fw-bold mb-0">EliteHomes</h4>
+        </div>
+        
+        <!-- Copyright -->
+        <div class="col-md-4 text-center mb-4 mb-md-0">
+          <p class="text-white mb-0 fs-sm">&copy; 2025 EliteHomes. All rights reserved.</p>
+        </div>
+        
+        <!-- Social Icons -->
+        <div class="col-md-4 text-center text-md-end">
+          <div class="d-inline-flex gap-3">
+            <a href="#" class="d-inline-flex align-items-center justify-content-center text-white rounded-3 text-decoration-none footer-social-btn">
+              <i class="fa-brands fa-facebook-f fs-sm"></i>
+            </a>
+            <a href="#" class="d-inline-flex align-items-center justify-content-center text-white rounded-3 text-decoration-none footer-social-btn">
+              <i class="fa-brands fa-twitter fs-sm"></i>
+            </a>
+            <a href="#" class="d-inline-flex align-items-center justify-content-center text-white rounded-3 text-decoration-none footer-social-btn">
+              <i class="fa-brands fa-instagram fs-sm"></i>
+            </a>
+            <a href="#" class="d-inline-flex align-items-center justify-content-center text-white rounded-3 text-decoration-none footer-social-btn">
+              <i class="fa-brands fa-linkedin-in fs-sm"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- horizontal line -->
+      <hr class="border-secondary opacity-25 mb-4">
+      
+      <div class="text-center">
+        <p class="text-white mb-0 fs-sm">Made with <i class="fa-solid fa-heart text-danger mx-1"></i> for finding your dream home</p>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer Section -->
+
+</main>
+<!-- End Main Content -->
+
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- Custom JS for collapsing navbar -->
+  <script>
+    document.querySelectorAll('.nav-link:not(.dropdown-toggle)').forEach(link => {
+      link.addEventListener('click', () => {
+        const navbarCollapse = document.getElementById('navbarSupportedContent');
+        if (navbarCollapse.classList.contains('show')) {
+          const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse) || new bootstrap.Collapse(navbarCollapse, {toggle: false});
+          bsCollapse.hide();
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
